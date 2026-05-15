@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" aria-label="临时微信二维码示意">
+  <rect width="360" height="360" rx="18" fill="#fbfcf8"/>
+  <rect x="14" y="14" width="332" height="332" rx="12" fill="#ffffff" stroke="#0f1720" stroke-width="4"/>
+  <g fill="#0f1720">
+    <rect x="38" y="38" width="80" height="80" rx="6"/>
+    <rect x="242" y="38" width="80" height="80" rx="6"/>
+    <rect x="38" y="242" width="80" height="80" rx="6"/>
+  </g>
+  <g fill="#ffffff">
+    <rect x="54" y="54" width="48" height="48" rx="4"/>
+    <rect x="258" y="54" width="48" height="48" rx="4"/>
+    <rect x="54" y="258" width="48" height="48" rx="4"/>
+  </g>
+  <g fill="#0f1720">
+    <rect x="68" y="68" width="20" height="20" rx="2"/>
+    <rect x="272" y="68" width="20" height="20" rx="2"/>
+    <rect x="68" y="272" width="20" height="20" rx="2"/>
+  </g>
+  <g fill="#0f1720">
+    <rect x="142" y="40" width="20" height="20"/>
+    <rect x="182" y="40" width="20" height="20"/>
+    <rect x="142" y="80" width="20" height="20"/>
+    <rect x="202" y="80" width="20" height="20"/>
+    <rect x="132" y="132" width="20" height="20"/>
+    <rect x="172" y="132" width="20" height="20"/>
+    <rect x="212" y="132" width="20" height="20"/>
+    <rect x="252" y="132" width="20" height="20"/>
+    <rect x="292" y="132" width="20" height="20"/>
+    <rect x="132" y="172" width="20" height="20"/>
+    <rect x="192" y="172" width="20" height="20"/>
+    <rect x="232" y="172" width="20" height="20"/>
+    <rect x="272" y="172" width="20" height="20"/>
+    <rect x="42" y="142" width="20" height="20"/>
+    <rect x="82" y="142" width="20" height="20"/>
+    <rect x="42" y="182" width="20" height="20"/>
+    <rect x="102" y="182" width="20" height="20"/>
+    <rect x="142" y="222" width="20" height="20"/>
+    <rect x="202" y="222" width="20" height="20"/>
+    <rect x="262" y="222" width="20" height="20"/>
+    <rect x="302" y="222" width="20" height="20"/>
+    <rect x="142" y="262" width="20" height="20"/>
+    <rect x="182" y="262" width="20" height="20"/>
+    <rect x="222" y="262" width="20" height="20"/>
+    <rect x="282" y="262" width="20" height="20"/>
+    <rect x="162" y="302" width="20" height="20"/>
+    <rect x="222" y="302" width="20" height="20"/>
+    <rect x="262" y="302" width="20" height="20"/>
+    <rect x="302" y="302" width="20" height="20"/>
+  </g>
+  <g>
+    <rect x="130" y="130" width="100" height="100" rx="14" fill="#12b981" stroke="#0f1720" stroke-width="4"/>
+    <text x="180" y="169" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" fill="#0f1720">Z</text>
+    <text x="180" y="198" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800" fill="#0f1720">临时</text>
+  </g>
+</svg>

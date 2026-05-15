@@ -1,0 +1,9 @@
+.DS_Store
+.env
+*.log
+*.tar.gz
+dist/
+node_modules/
+figma_design
+Neo-Brutalist Solutions - Vari.html
+智码软件主页.html
