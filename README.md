@@ -104,13 +104,18 @@ Wildcard 证书需要 DNS 验证。证书需要同时包含根域名和通配符
 curl https://get.acme.sh | sh -s email=你的邮箱
 source ~/.bashrc
 
+# 避免 acme.sh 默认使用 ZeroSSL
+~/.acme.sh/acme.sh --set-default-ca --server letsencrypt
+
 # 腾讯云/DNSPod API 密钥
 export Tencent_SecretId="你的 SecretId"
 export Tencent_SecretKey="你的 SecretKey"
 
 # 申请 wildcard 证书
 ~/.acme.sh/acme.sh --issue \
+  --server letsencrypt \
   --dns dns_tencent \
+  --dnssleep 120 \
   -d smartzhima.com \
   -d '*.smartzhima.com'
 
@@ -118,10 +123,10 @@ export Tencent_SecretKey="你的 SecretKey"
 sudo mkdir -p /opt/certs/smartzhima
 sudo chown -R "$USER":"$USER" /opt/certs/smartzhima
 
-~/.acme.sh/acme.sh --install-cert -d smartzhima.com \
+~/.acme.sh/acme.sh --install-cert -d smartzhima.com --ecc \
   --key-file /opt/certs/smartzhima/privkey.pem \
   --fullchain-file /opt/certs/smartzhima/fullchain.pem \
-  --reloadcmd "docker compose -f /opt/smartzhima/docker-compose.yml -f /opt/smartzhima/docker-compose.https.yml exec web nginx -s reload"
+  --reloadcmd "docker exec smartzhima-web nginx -s reload"
 ```
 
 证书安装成功后，启用 HTTPS 配置：
