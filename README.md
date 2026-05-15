@@ -85,6 +85,20 @@ docker compose -f docker-compose.yml -f docker-compose.https.yml up -d --build
 - `80`: HTTP
 - `443`: HTTPS，后续配置证书时使用
 
+如果服务器启用了系统防火墙，也要放行 `80` 和 `443`。Ubuntu 常见是 `ufw`：
+
+```bash
+sudo ufw status
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+```
+
+检查端口是否正在监听：
+
+```bash
+sudo ss -lntp | grep -E ':80|:443'
+```
+
 默认 Docker 配置只监听 `80`。备案通过并完成域名解析后，可以先访问：
 
 - `http://smartzhima.com`
