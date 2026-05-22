@@ -2,6 +2,13 @@
 
 智码软件 / Smart Zhima 的静态官网。
 
+## 当前线上信息
+
+- 域名：`smartzhima.com`
+- ICP 备案号：`陕ICP备2026012300号`
+- 备案审核通过日期：`2026-05-22`
+- 页脚备案号链接至：`https://beian.miit.gov.cn/`
+
 ## 本地文件
 
 - `index.html`: 官网页面
@@ -99,7 +106,7 @@ sudo ufw allow 443/tcp
 sudo ss -lntp | grep -E ':80|:443'
 ```
 
-默认 Docker 配置只监听 `80`。备案通过并完成域名解析后，可以先访问：
+默认 Docker 配置只监听 `80`。完成域名解析后，可以先访问：
 
 - `http://smartzhima.com`
 - `http://www.smartzhima.com`
